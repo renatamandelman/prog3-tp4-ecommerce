@@ -1,17 +1,15 @@
-import React from 'react'
-import Services from '@/components/Services'
+import React from "react";
+import Services from "@/components/Team";
 
-import Hero from './Hero'
+import Hero from "./Hero";
 
 const HomeContainer = () => {
   return (
     <div>
-
-        <Hero/>
-
-    <Services />
+      <Hero />
+      <Services />
     </div>
-  )
-}
+  );
+};
 
-export default HomeContainer
+export default HomeContainer;
