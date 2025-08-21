@@ -1,9 +1,11 @@
 import React from 'react'
-import Hero from './Hero'
+import Services from '@/components/Services'
 
 const HomeContainer = () => {
   return (
-    <Hero />
+    <div>
+    <Services />
+    </div>
   )
 }
 
