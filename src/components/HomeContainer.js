@@ -1,22 +1,12 @@
-import React from 'react'
-import Hero from './Hero'
-
-const HomeContainer = () => {
-  return (
-    <Hero />
-  )
-}
-
 import React from "react";
-import Services from "@/components/Team";
-
-import Hero from "./Hero";
+import Hero from "@/components/Hero";
+import Team from "@/components/Team";
 
 const HomeContainer = () => {
   return (
     <div>
       <Hero />
-      <Services />
+      <Team />
     </div>
   );
 };

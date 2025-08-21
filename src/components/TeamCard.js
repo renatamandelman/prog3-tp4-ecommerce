@@ -20,4 +20,4 @@ const ServiceCard = ({ image, color, name, role }) => {
   );
 };
 
-export default ServiceCard;
+export default TeamCard;
