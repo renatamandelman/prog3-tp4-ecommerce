@@ -1,3 +1,12 @@
+import React from 'react'
+import Hero from './Hero'
+
+const HomeContainer = () => {
+  return (
+    <Hero />
+  )
+}
+
 import React from "react";
 import Services from "@/components/Team";
 
