@@ -1,19 +1,14 @@
-import React from 'react'
-import Services from '@/components/Services'
-import Footer from '@/components/Footer'
-
-import Hero from './Hero'
+import React from "react";
+import Hero from "@/components/Hero";
+import Team from "@/components/Team";
 
 const HomeContainer = () => {
   return (
     <div>
-
-        <Hero/>
-
-    <Services />
-    <Footer />
+      <Hero />
+      <Team />
     </div>
-  )
-}
+  );
+};
 
-export default HomeContainer
+export default HomeContainer;
