@@ -26,10 +26,13 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-dm-sans), Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
    /* chau */
+}
+.family-serif {
+  font-family: var(--font-dm-serif-display);
 }
 
