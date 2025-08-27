@@ -3,16 +3,18 @@ import React from 'react'
 const Hero = () => {
   return (
      <section
-      className="relative w-full h-[600px] rounded-xl overflow-hidden bg-cover bg-center flex items-center p-6 text-white"
-      style={{
-        backgroundImage: `url('/hero.png')` 
-      }}
+      className="w-full h-[600px]  bg-[#9db5b2] flex items-center justify-center p-2  text-[#3B413C] "
     >
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-0" />
-
-      <div className="relative lg:z-10 max-w-[600px] family-sans  p-20">
-       <h1 className='uppercase text-4xl md:text-6xl font-bold'>BMR - Studio</h1>
-       <p className='italic md:text-2xl'>Your story, shaped into design.</p>
+<div className='flex items-end justify-around w-[90%] md:w-[80%]'>
+      <div className=" max-w-[600px] family-sans  text-4xl md:text-[130px] ">
+        <h1 className="font-bold">Think.</h1>
+        <h1 className=" font-bold ">Build.</h1>
+        <h1 className="text-[#ECECAB] underline family-serif">Connect.</h1>
+      </div>
+      <div className='text-lg md:text-2xl p-10'>
+        <p >Design that speaks.</p>
+        <p> Experiences that engage.</p>
+      </div>
       </div>
     </section>
   )
