@@ -16,7 +16,7 @@ const Services = () => {
             src="/orangeTab.png"
             width={1400}
             height={100}
-            alt="orange tab"
+            alt="orange tab w-[1400px]"
           />
         </div>
         <div>
@@ -27,8 +27,8 @@ const Services = () => {
             src="/purpleTab.png"
             width={1400}
             height={100}
-            alt="orange tab"
-            className="absolute top-25"
+            alt="purple tab"
+            className="absolute top-25 w-[1400px]"
           />
         </div>
         <div>
@@ -39,20 +39,20 @@ const Services = () => {
             src="/blueTab.png"
             width={1400}
             height={100}
-            alt="orange tab"
-            className="absolute top-55"
+            alt="blue tab"
+            className="absolute top-55 w-[1400px]"
           />
         </div>
         <div>
-             <p className="text-black absolute left-68 top-85 text-2xl z-2">
+             <p className="text-black absolute left-68 top-85 text-2xl z-4">
             Our Products
           </p>
         <Image
           src="/yellowTab.png"
           width={1400}
           height={100}
-          alt="orange tab"
-          className="absolute top-80"
+          alt="yellow tab"
+          className="absolute top-80 w-[1400px] z-3"
         /></div>
       </div>
     </div>
