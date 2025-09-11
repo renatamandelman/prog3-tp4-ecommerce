@@ -1,8 +1,10 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
-const ProductCard = ({title,description,price}) => {
+const ProductCard = ({id,title,description,price}) => {
   return (
+      // <Link href={`product/${product.id}`} >
       <div className="bg-[white] rounded-2xl shadow-lg overflow-hidden flex flex-col hover:shadow-2xl transition duration-300">
       
       <div className="bg-gray-200 h-64 flex items-center justify-center">
@@ -22,7 +24,10 @@ const ProductCard = ({title,description,price}) => {
         <span className="mt-4 text-xl font-bold text-gray-900">{price}</span>
       </div>
     </div>
+    // </Link>
   )
 }
+
+
 
 export default ProductCard
