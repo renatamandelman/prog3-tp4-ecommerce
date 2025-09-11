@@ -13,7 +13,7 @@ const Navbar = () => {
 
       <ul className="flex flex-row w-[40%] justify-between font-bold mr-4 pr-2">
         <li className="flex flex-row items-center"><a href='/services'>Services</a> <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6m0 0H9m9 0v9"></path></svg></li>
-        <li><a href=''>Our Work</a></li>
+        <li><a href=''>Our Products</a></li>
         <li><a href=''>About Us</a></li>
         <li><a href=''>Contact Us</a></li>
       </ul>
