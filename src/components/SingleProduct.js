@@ -10,7 +10,7 @@ const SingleProduct = () => {
         <div className="flex flex-col space-y-6">
           <h1 className="text-4xl font-bold text-gray-800">Trend Aesthetic - Plantilla editable</h1>
           <p className="text-gray-600 leading-relaxed">
-            Incluye: - 12 plantillas listas para usar - Diseños adaptados Link las tendencias actuales de Instagram - 100% personalizables (colores, tipografías, imágenes) ✨ Entrega inmediata. 💌 Ideal para emprendedoras, creadoras de contenido y marcas personales.
+            Incluye: - 12 plantillas  listas para usar - Diseños adaptados Link las tendencias actuales de Instagram - 100% personalizables (colores, tipografías, imágenes) ✨ Entrega inmediata. 💌 Ideal para emprendedoras, creadoras de contenido y marcas personales.
             <Link href="#" className="block mt-2 text-blue-600 hover:underline">Ver más detalles</Link>
           </p>
 
