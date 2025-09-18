@@ -16,12 +16,8 @@ const Services = () => {
             src="/orangeTabSVG.svg"
             width={1600}
             height={100}
-
             alt="orange tab"
             className="w-[1800px]"
-
-            alt="orange tab w-[1400px]"
-
           />
         </div>
         <div>
@@ -34,8 +30,6 @@ const Services = () => {
             height={100}
             alt="orange tab"
             className="absolute top-25 w-[1800px]"
-            alt="purple tab"
-            className="absolute top-25 w-[1400px]"
           />
         </div>
         <div>
@@ -46,34 +40,20 @@ const Services = () => {
             src="/blueTabSVG.svg"
             width={1600}
             height={100}
-
             alt="orange tab"
             className="absolute top-55 w-[1800px]"
           />
         </div>
         <div>
              <p className="text-black absolute left-77 top-85 text-2xl z-2">
-
-            alt="blue tab"
-            className="absolute top-55 w-[1400px]"
-          />
-        </div>
-        <div>
-             <p className="text-black absolute left-68 top-85 text-2xl z-4">
- 
             Our Products
           </p>
         <Image
           src="/yellowTabSVG.svg"
           width={1600}
           height={100}
-
           alt="orange tab"
           className="absolute top-80 w-[1800px]"
-
-          alt="yellow tab"
-          className="absolute top-80 w-[1400px] z-3"
-
         /></div>
       </div>
     </div>
