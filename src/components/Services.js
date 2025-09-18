@@ -16,7 +16,7 @@ const Services = () => {
             src="/orangeTabSVG.svg"
             width={1600}
             height={100}
-            alt="orange tabb"
+            alt="orange tab"
             className="w-[1800px]"
           />
         </div>
