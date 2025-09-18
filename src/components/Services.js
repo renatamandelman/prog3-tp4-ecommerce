@@ -27,7 +27,7 @@ const Services = () => {
             src="/purpleTab.png"
             width={1400}
             height={100}
-            alt="purple tab"=
+            alt="purple tab"
             className="absolute top-25 w-[1400px]"
           />
         </div>
