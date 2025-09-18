@@ -28,7 +28,7 @@ const Services = () => {
             src="/purpleTabSVG.svg"
             width={1600}
             height={100}
-            alt="orange tab"
+            alt="purple tab"
             className="absolute top-25 w-[1800px]"
           />
         </div>
@@ -40,7 +40,7 @@ const Services = () => {
             src="/blueTabSVG.svg"
             width={1600}
             height={100}
-            alt="orange tab"
+            alt="blue tab"
             className="absolute top-55 w-[1800px]"
           />
         </div>
@@ -52,7 +52,7 @@ const Services = () => {
           src="/yellowTabSVG.svg"
           width={1600}
           height={100}
-          alt="orange tab"
+          alt="yellow tab"
           className="absolute top-80 w-[1800px]"
         /></div>
       </div>
