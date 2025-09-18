@@ -45,16 +45,17 @@ const Services = () => {
           />
         </div>
         <div>
-             <p className="text-black absolute left-77 top-85 text-2xl z-2">
+          <p className="text-black absolute left-77 top-85 text-2xl z-2">
             Our Products
           </p>
-        <Image
-          src="/yellowTabSVG.svg"
-          width={1600}
-          height={100}
-          alt="orange tab"
-          className="absolute top-80 w-[1800px]"
-        /></div>
+          <Image
+            src="/yellowTabSVG.svg"
+            width={1600}
+            height={100}
+            alt="orange tab"
+            className="absolute top-80 w-[1800px]"
+          />
+        </div>
       </div>
     </div>
   );
