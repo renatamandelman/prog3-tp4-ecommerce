@@ -4,8 +4,8 @@ import TeamCard from "@/components/TeamCard";
 const Team = () => {
   return (
  
-      <div className="bg-[var(--amarillo)] text-[#3B413C] h-[600px] flex flex-col items-center justify-start pt-10 ">
-        <h1 className="text-4xl mb-2 family-serif text-[80px]">The Team</h1>
+      <div className="bg-[var(--amarillo)] text-black h-[600px] flex flex-col items-center justify-start pt-10 ">
+        <h1 className="text-4xl mb-2">The Team</h1>
         <p className="text-lg">Conocé a las capas cracks ídolas de nuestras diseñadoras :P</p>
         <div className="h-[250px] w-[1000px] flex justify-around mt-10 ">
           <TeamCard image="/dummy/perrito.jpg" color="bg-[#9DB5B2]" name="Renata Mandelman" role="Backend Developer" />
