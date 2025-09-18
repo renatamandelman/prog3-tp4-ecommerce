@@ -9,7 +9,7 @@ const Navbar = () => {
         src="/dummy/perrito.jpg"
         width={40}
         height={40}
-        alt="perrito cool"
+        alt="perrito cooll"
       />
 </Link>
       <ul className="flex flex-row w-[40%] justify-between font-bold mr-4 pr-2">
