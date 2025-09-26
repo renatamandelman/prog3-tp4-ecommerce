@@ -13,8 +13,8 @@ const AppContext = createContext();
 
 export const AppContextProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
-  const [productsFromCategory, setProductsFromCategory] = useState([]);
   const [singleProduct, setSingleProduct] = useState([]);
+  const [productsFromCategory, setProductsFromCategory] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const getProducts = useCallback(async () => {
@@ -60,6 +60,7 @@ export const AppContextProvider = ({ children }) => {
         getProducts,
         getProductsFromCategory,
         getSingleProduct,
+        singleProduct
       }}
     >
       {children}
