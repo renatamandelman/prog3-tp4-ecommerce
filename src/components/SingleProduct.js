@@ -52,7 +52,7 @@ const SingleProduct = ({ id }) => {
 
         <div className="flex items-center justify-center p-4">
           <div className="relative md:h-full rounded-lg overflow-hidden shadow-xl w-full h-95">
-            <Image
+            <Imag
               src={`/assets/${singleProduct.imageUrl}`}
               alt={singleProduct.title}
             layout="fill"
