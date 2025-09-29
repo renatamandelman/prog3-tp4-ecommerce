@@ -57,6 +57,7 @@ export const AppContextProvider = ({ children }) => {
     <AppContext.Provider
       value={{
         products,
+        productsFromCategory,
         getProducts,
         getProductsFromCategory,
         getSingleProduct,
