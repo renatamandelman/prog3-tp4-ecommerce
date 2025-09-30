@@ -14,8 +14,8 @@ const NavbarShop = () => {
       </Link>
 
       <ul className="flex flex-row w-[30%] justify-between font-bold mr-4 pr-2">
-        <li className="flex flex-row items-center"><Link href='/categories/templates'>Templates</Link> </li>
-        <li><Link href='/categories/mockups'>Mockups</Link></li>
+        <li className="flex flex-row items-center"><Link href='/categories/plantilla'>Plantillas</Link> </li>
+        <li><Link href='/categories/mockup'>Mockups</Link></li>
         <li><Link href=''>Contact Us</Link></li>
       </ul>
     </div>

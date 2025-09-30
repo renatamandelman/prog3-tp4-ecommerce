@@ -1,9 +1,15 @@
+
 import CategoryGrid from '@/components/CategoryGrid'
+import NavbarShop from '@/components/NavbarShop'
 import React from 'react'
 
-const Categories = () => {
+const Categories = async ({params}) => {
+  const {slug} =  await params
   return (
-    <CategoryGrid />
+    <>
+    <NavbarShop/>
+    <CategoryGrid slug={slug} />
+    </>
   )
 }
 

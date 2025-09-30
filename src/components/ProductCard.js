@@ -11,7 +11,7 @@ const ProductCard = ({id,product}) => {
       <div className="bg-gray-200 h-64 flex items-center justify-center">
          <Image
             src={`/assets/${product.imageUrl}`}
-            alt={product.title}
+            alt={`${product.title}`}
             className="w-full h-full object-cover"
             width={100}
             height={100}

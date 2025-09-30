@@ -43,11 +43,15 @@ export const AppContextProvider = ({ children }) => {
   }, []);
 
   const getProductsFromCategory = useCallback(async ({ slug }) => {
+    
     try {
       setLoading(true);
-      const response = await axios.get(`${API_URL}/categories/${slug}`);
-      setProductsFromCategory(response.data);
+      console.log("slug", slug)
+      const response = await axios.get(`${API_URL}/categories/${slug}/products`);
+      setProductsFromCategory(response.data.products);
+      console.log(response.data.products)
       setLoading(false);
+      
     } catch (error) {
       console.log("error:", error);
     }
@@ -61,6 +65,7 @@ export const AppContextProvider = ({ children }) => {
         getProducts,
         getProductsFromCategory,
         getSingleProduct,
+        loading
       }}
     >
       {children}
