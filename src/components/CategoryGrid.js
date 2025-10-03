@@ -25,7 +25,7 @@ const CategoryGrid =  ({slug}) => {
     // 2. Mostrar si no hay productos (el array es nulo o vacío)
     if (!productsFromCategory || productsFromCategory.length === 0) {
       return (
-        <div className="min-h-screen bg-[#e6d8c7] py-12 px-6">
+        <div className="min-h-screen bg-[#e6d8c7] py-2 px-6">
             <div className="max-w-7xl mx-auto">
                 <h1 className="text-3xl font-bold text-[#3B413C] mb-10 font-serif">
                     {slug.charAt(0).toUpperCase() + slug.slice(1)}
@@ -37,7 +37,7 @@ const CategoryGrid =  ({slug}) => {
     }
 
    return (
-    <div className="min-h-screen bg-[#e6d8c7] py-12 px-6">
+    <div className="min-h-screen bg-[#e6d8c7] py-2 px-6">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold text-[#3B413C] mb-10 font-serif">
          {slug.charAt(0).toUpperCase() + slug.slice(1)} disponibles

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const SingleProduct = ({ id }) => {
-  const [singleProduct, setSingleProduct] = useState([]);
+  const [singleProduct, setSingleProduct, handleAddToCart] = useState([]);
   const { getSingleProduct } = useAppContext();
 
   useEffect(() => {
@@ -15,6 +15,14 @@ const SingleProduct = ({ id }) => {
     };
     fetchProduct();
   }, [getSingleProduct, id]);
+
+  const addToCart = (product) => {
+    const productToAdd = {
+      ...product,
+      qty:1
+    };
+    handleAddToCart(productToAdd)
+  }
 
   return (
     <div className="bg-[#e6d8c7] min-h-screen flex items-center justify-center">
@@ -36,7 +44,8 @@ const SingleProduct = ({ id }) => {
                 <button className="w-full mt-2 bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
                   Comprar con Paypal
                 </button>
-                <button className="w-full mt-2 border-gray-900 border-2 text-gray-900 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
+                <button className="w-full mt-2 border-gray-900 border-2 text-gray-900 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors" 
+                onClick={() => addToCart(product)}>
                   Agregar al carrito
                 </button>
               </div>

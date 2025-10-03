@@ -16,6 +16,7 @@ export const AppContextProvider = ({ children }) => {
   const [productsFromCategory, setProductsFromCategory] = useState([]);
   const [singleProduct, setSingleProduct] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [cart, setCart] = useState([])
 
   const getProducts = useCallback(async () => {
     try {
@@ -57,6 +58,21 @@ export const AppContextProvider = ({ children }) => {
     }
   }, []);
 
+  const handleAddToCart = (product) => {
+    let productToAdd ={}
+    const findProduct = cart.find((productInCart) => productInCart._id === product._id)
+    if(findProduct) {
+      productToAdd = {...findProduct,qty:findProduct.qty + product.qty}
+
+    }else{
+      productToAdd = product;
+    }
+    const filteredCart = cart.filter((productInCart) => productInCart._id !== product._id)
+
+    setCart([...filteredCart, productToAdd]);
+
+  }
+const cartQty = () => cart.length;
   return (
     <AppContext.Provider
       value={{
@@ -65,7 +81,10 @@ export const AppContextProvider = ({ children }) => {
         getProducts,
         getProductsFromCategory,
         getSingleProduct,
-        loading
+        loading,
+        cartQty,
+        handleAddToCart,
+        cart
       }}
     >
       {children}
