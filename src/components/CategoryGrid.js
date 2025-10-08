@@ -45,6 +45,7 @@ const CategoryGrid =  ({slug}) => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 ">
           {productsFromCategory.map((product) => (
             <ProductCard
+            
               key={product._id}
               id={product._id}
               product={product}
