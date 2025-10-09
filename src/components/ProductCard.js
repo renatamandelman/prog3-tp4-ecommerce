@@ -2,10 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const ProductCard = ({id,product}) => {
+const ProductCard = ({ruta,id,product}) => {
 
   return (
-      <Link href={`ourProducts/product/${id}`} >
+      <Link href={`${ruta}product/${id}`} >
       <div className="bg-[white] rounded-2xl shadow-lg overflow-hidden flex flex-col hover:shadow-2xl transition duration-300">
       
       <div className="bg-gray-200 h-64 flex items-center justify-center">

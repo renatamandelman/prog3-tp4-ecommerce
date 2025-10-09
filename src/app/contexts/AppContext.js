@@ -58,6 +58,7 @@ export const AppContextProvider = ({ children }) => {
     }
   }, []);
 
+
   const handleAddToCart = (product) => {
     let productToAdd ={}
     const findProduct = cart.find((productInCart) => productInCart._id === product._id)

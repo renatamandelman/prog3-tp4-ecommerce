@@ -39,23 +39,23 @@ const SingleProduct = ({ id }) => {
           </span>
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-6">
             <div className="flex-1">
-              <div class="p-6 bg-gray-100 rounded-lg max-w-4xl mx-auto my-2 text-center flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+              <div className="p-6 bg-gray-100 rounded-lg max-w-4xl mx-auto my-2 text-center flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                 <p
-                  class="py-2 px-4 cursor-pointer text-sm font-medium transition-all duration-200 border-2 
+                  className="py-2 px-4 cursor-pointer text-sm font-medium transition-all duration-200 border-2 
              border-black bg-gray-100  shadow-md"
                 >
                   LICENCIA ESTÁNDAR
                 </p>
 
                 <p
-                  class="py-2 px-4 cursor-pointer text-sm font-medium transition-all duration-200 border-2 
+                  className="py-2 px-4 cursor-pointer text-sm font-medium transition-all duration-200 border-2 
              border-transparent  hover:border-gray-300 hover:text-black"
                 >
                   LICENCIA COMERCIAL BÁSICA
                 </p>
 
                 <p
-                  class="py-2 px-4 cursor-pointer text-sm font-medium transition-all duration-200 border-2 
+                  className="py-2 px-4 cursor-pointer text-sm font-medium transition-all duration-200 border-2 
              border-transparent  hover:border-gray-300 hover:text-black"
                 >
                   LICENCIA COMERCIAL AMPLIADA
