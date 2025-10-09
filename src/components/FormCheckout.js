@@ -22,7 +22,7 @@ function validateUsername(value) {
   return error;
 }
 
-export const FormCheckout = () => (
+export const FormCheckout = ({handleAddOrder}) => (
   // Contenedor principal para centrar el formulario en la página
   <div className="min-h-screen bg-gray-100 flex items-center justify-center">
     
@@ -38,11 +38,8 @@ export const FormCheckout = () => (
           username: '',
           email: '',
         }}
-        onSubmit={(values, { setSubmitting }) => {
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
-            setSubmitting(false);
-          }, 400);
+        onSubmit={(values) => {
+          handleAddOrder(values)
         }}
       >
         {({ errors, touched, isValidating }) => (

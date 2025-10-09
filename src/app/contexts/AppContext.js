@@ -73,7 +73,32 @@ export const AppContextProvider = ({ children }) => {
     setCart([...filteredCart, productToAdd]);
 
   }
+
 const cartQty = () => cart.length;
+
+ const addOrder = async (userValues) => {
+  const reducedCart = cart.map(product => {
+    const prod = {
+      name: product.name,
+      _id: product._id,
+      qty: product.qty
+    }
+
+    return
+  })
+   const orderValues = {
+      user: userValues,
+      products: reducedCart
+    };
+    console.log('my order is', orderValues);
+    
+    try {
+      const response = await axios.post(`${API_URL}/orders`, orderValues);
+      console.log(response.data)
+    } catch (error) {
+      console.log('error', error)
+    }
+  }
   return (
     <AppContext.Provider
       value={{
@@ -85,7 +110,8 @@ const cartQty = () => cart.length;
         loading,
         cartQty,
         handleAddToCart,
-        cart
+        cart,
+        addOrder
       }}
     >
       {children}
