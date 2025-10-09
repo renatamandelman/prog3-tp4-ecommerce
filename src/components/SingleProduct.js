@@ -5,8 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const SingleProduct = ({ id }) => {
-  const [singleProduct, setSingleProduct, handleAddToCart] = useState([]);
-  const { getSingleProduct } = useAppContext();
+  const [singleProduct, setSingleProduct] = useState([]);
+  const { getSingleProduct, handleAddToCart } = useAppContext();
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -67,10 +67,11 @@ const SingleProduct = ({ id }) => {
                 </button>
                 <button
                   className="w-full mt-2 border-[#3B413C] border-2  py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors"
-                  onClick={() => addToCart(product)}
+                  onClick={() => addToCart(singleProduct)}
                 >
                   Agregar al carrito
                 </button>
+                <Link href={'/checkout'}>Checkout</Link>
               </div>
               <Link
                 href="#"
