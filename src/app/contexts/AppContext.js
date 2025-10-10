@@ -76,6 +76,10 @@ export const AppContextProvider = ({ children }) => {
 
 const cartQty = () => cart.length;
 
+const cartTotal = cart.reduce(
+    (acc,product) => acc + product.qty * product.price, 0)
+  
+
  const addOrder = async (userValues) => {
   const reducedCart = cart.map(product => {
     const prod = {
@@ -88,7 +92,8 @@ const cartQty = () => cart.length;
   })
    const orderValues = {
       user: userValues,
-      products: reducedCart
+      products: reducedCart,
+      total: cartTotal
     };
     console.log('my order is', orderValues);
     
@@ -99,6 +104,7 @@ const cartQty = () => cart.length;
       console.log('error', error)
     }
   }
+
   return (
     <AppContext.Provider
       value={{
@@ -111,7 +117,8 @@ const cartQty = () => cart.length;
         cartQty,
         handleAddToCart,
         cart,
-        addOrder
+        addOrder,
+        cartTotal
       }}
     >
       {children}
