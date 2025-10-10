@@ -2,6 +2,7 @@
 import { useMemo } from "react";
 import { useAppContext } from "@/app/contexts/AppContext";
 import { FormCheckout } from "./FormCheckout";
+import Image from "next/image";
 
 const CheckoutContainer = () => {
   const { cart, addOrder } = useAppContext();
@@ -64,13 +65,12 @@ const CheckoutContainer = () => {
                     className="flex justify-between items-center"
                   >
                     <div className="flex items-center gap-4">
-                      <img
-                        src={
-                          product.image ||
-                          "https://placehold.co/100x100/e2e8f0/a0aec0?text=IMG"
-                        }
-                        alt={product.name}
+                      <Image
+                        src={`/assets/${product.imageUrl}`}                 
+                        alt={product.title}
                         className="w-16 h-16 object-cover rounded-md"
+                        width={16}
+                        height={116}
                       />
                       <div>
                         <h3 className="font-semibold text-gray-800">
