@@ -7,6 +7,7 @@ import Link from "next/link";
 
 const CheckoutContainer = () => {
   const { cart, addOrder } = useAppContext();
+  console.log('cart',cart);
 
   const handleAddOrder = (values) => {
     addOrder(values);
@@ -27,7 +28,7 @@ const CheckoutContainer = () => {
 
   if (cart.length === 0) {
     return (
-      <div className="bg-gray-50 min-h-screen flex items-center justify-center font-sans">
+      <div className="bg-[#e6d8c7] min-h-screen flex items-center justify-center font-sans">
         <div className="text-center bg-white p-12 rounded-lg shadow-md">
           <h1 className="text-2xl font-semibold text-gray-700">
             Tu carrito está vacío
@@ -44,7 +45,7 @@ const CheckoutContainer = () => {
   }
 
   return (
-    <div className="bg-gray-50 min-h-screen font-sans">
+    <div className="bg-[#e6d8c7] min-h-screen font-sans">
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
           Finalizar Compra
@@ -68,7 +69,7 @@ const CheckoutContainer = () => {
       <div className="flex items-center gap-4">
     
           <Image
-            src={`/assets/${product.imageUrl}`}
+            src={`/assets/${product.image}`}
             alt={product.name}
             width={64}
             height={64}
@@ -80,6 +81,9 @@ const CheckoutContainer = () => {
           <h3 className="font-semibold text-gray-800">
             {product.name} {/* Mostrará el nombre del producto o de la licencia */}
           </h3>
+         <p className="text-sm text-gray-500">
+            {product.license}
+          </p>
           <p className="text-sm text-gray-500">
             Cantidad: {product.qty}
           </p>

@@ -24,7 +24,7 @@ function validateUsername(value) {
 
 export const FormCheckout = ({handleAddOrder}) => (
   // Contenedor principal para centrar el formulario en la página
-  <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+  <div className="flex items-center justify-center">
     
     {/* Tarjeta del formulario */}
     <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">

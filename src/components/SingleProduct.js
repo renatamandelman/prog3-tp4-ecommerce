@@ -47,10 +47,10 @@ const SingleProduct = ({ id }) => {
     if (!singleProduct) return;
 console.log('singleProduct:',singleProduct)
     // 1. Agrega el producto principal al carrito
-    handleAddToCart({
-      ...singleProduct,
-      qty: 1
-    });
+    // handleAddToCart({
+    //   ...singleProduct,
+    //   qty: 1
+    // });
     
 
 
@@ -59,8 +59,10 @@ console.log('singleProduct:',singleProduct)
       _id: `${singleProduct._id}_${selectedLicense._id}`, // ID único para evitar conflictos
       qty: 1,
       isLicense: true, // Propiedad opcional para identificarla
-      name: `${singleProduct.name} — ${selectedLicense.name}`,
+      name:`${singleProduct.name} `,
+      license: `${selectedLicense.name}`,
       price: singleProduct.price + selectedLicense.price,
+      image:`${singleProduct.imageUrl}`
     };
     console.log(licenseProduct)
     handleAddToCart(licenseProduct);
