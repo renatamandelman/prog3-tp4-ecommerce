@@ -55,7 +55,7 @@ useEffect(() => {
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between w-full">
             <h1 className="text-3xl font-bold text-[#3B413C] mb-10 font-serif">
-              Templates disponibles
+              Todos los productos disponibles
             </h1>
 
             <div className="p-2 text-black bg-gray-100 rounded-lg max-w-4xl my-2 text-center flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
