@@ -7,7 +7,7 @@ import {
   useCallback,
 } from "react";
 import axios from "axios";
-const API_URL = "http://localhost:4000";
+
 
 const AppContext = createContext();
 
@@ -21,7 +21,7 @@ export const AppContextProvider = ({ children }) => {
   const getProducts = useCallback(async () => {
     try {
       setLoading(true);
-      const response = await axios.get(`${API_URL}/products`);
+      const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/products`);
       setProducts(response.data.products);
       console.log(response.data.products);
 
@@ -34,7 +34,7 @@ export const AppContextProvider = ({ children }) => {
   const getSingleProduct = useCallback(async ({ id }) => {
     try {
       setLoading(true);
-      const response = await axios.get(`${API_URL}/products/${id}`);
+      const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/products/${id}`);
       setSingleProduct(response.data.product);
       setLoading(false);
        return response.data.product;
@@ -48,7 +48,7 @@ export const AppContextProvider = ({ children }) => {
     try {
       setLoading(true);
       console.log("slug", slug)
-      const response = await axios.get(`${API_URL}/categories/${slug}/products`);
+      const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/categories/${slug}/products`);
       setProductsFromCategory(response.data.products);
       console.log(response.data.products)
       setLoading(false);
@@ -98,7 +98,7 @@ const cartTotal = cart.reduce(
     console.log('my order is', orderValues);
     
     try {
-      const response = await axios.post(`${API_URL}/orders`, orderValues);
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/orders`, orderValues);
       console.log('response',response.data)
     } catch (error) {
       console.log('error', error)
