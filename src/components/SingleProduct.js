@@ -43,25 +43,26 @@ const SingleProduct = ({ id }) => {
     }
   }, [getSingleProduct, id]);
 
-  // Nueva función para agregar ambos productos al carrito
   const handleAddToCartClick = () => {
     if (!singleProduct) return;
-
+console.log('singleProduct:',singleProduct)
     // 1. Agrega el producto principal al carrito
     handleAddToCart({
       ...singleProduct,
-      qty: 1,
+      qty: 1
     });
+    
 
-    // 2. Agrega la licencia como un producto separado
-    // Le damos una estructura de "producto" para que el carrito la entienda
+
     const licenseProduct = {
       ...selectedLicense,
       _id: `${singleProduct._id}_${selectedLicense._id}`, // ID único para evitar conflictos
       qty: 1,
       isLicense: true, // Propiedad opcional para identificarla
-      name: `${singleProduct.name} — ${selectedLicense.name}`
+      name: `${singleProduct.name} — ${selectedLicense.name}`,
+      price: singleProduct.price + selectedLicense.price,
     };
+    console.log(licenseProduct)
     handleAddToCart(licenseProduct);
 
   };
@@ -78,7 +79,6 @@ const SingleProduct = ({ id }) => {
           <p className="text-gray-600 leading-relaxed">
             {singleProduct.description}
           </p>
-          {/* Muestra el precio del producto + el de la licencia */}
           <span className="text-3xl font-semibold">
             ${singleProduct.price + selectedLicense.price} USD
           </span>

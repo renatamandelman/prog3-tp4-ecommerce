@@ -55,7 +55,7 @@ export const FormCheckout = ({handleAddOrder}) => (
                 name="email"
                 type="email"
                 validate={validateEmail}
-                className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                className="text-black mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-800 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
               />
               {errors.email && touched.email && (
                 <div className="text-red-500 text-xs mt-1">{errors.email}</div>
@@ -71,7 +71,7 @@ export const FormCheckout = ({handleAddOrder}) => (
                 id="username"
                 name="username"
                 validate={validateUsername}
-                className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                className="text-black mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-800 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
               />
               {errors.username && touched.username && (
                 <div className="text-red-500 text-xs mt-1">{errors.username}</div>

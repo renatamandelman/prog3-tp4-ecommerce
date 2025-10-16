@@ -3,6 +3,7 @@ import { useMemo } from "react";
 import { useAppContext } from "@/app/contexts/AppContext";
 import { FormCheckout } from "./FormCheckout";
 import Image from "next/image";
+import Link from "next/link";
 
 const CheckoutContainer = () => {
   const { cart, addOrder } = useAppContext();
@@ -34,9 +35,9 @@ const CheckoutContainer = () => {
           <p className="text-gray-500 mt-2">
             No hay productos para mostrar en el checkout.
           </p>
-          <button className="mt-6 bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-indigo-700 transition">
+          <Link href="/ourProducts" className="mt-12 bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-indigo-700 transition">
             Volver a la tienda
-          </button>
+          </Link>
         </div>
       </div>
     );

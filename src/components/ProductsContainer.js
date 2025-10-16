@@ -9,7 +9,7 @@ import ProductsGrid from "./ProductsGrid";
 const filters = [
   {
     _id: "all_products",
-    name: "All",
+    name: "Todos",
   },
   {
     _id: "packaging",
@@ -20,8 +20,8 @@ const filters = [
     name: "Branding",
   },
   {
-    _id: "social_media",
-    name: "Social Media",
+    _id: "Redes sociales",
+    name: "Redes Sociales",
   },
 ];
 
