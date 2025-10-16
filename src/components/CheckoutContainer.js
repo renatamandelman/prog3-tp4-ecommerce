@@ -110,7 +110,7 @@ const CheckoutContainer = () => {
                 <span>Total</span>
                 <span>{formatCurrency(total)}</span>
               </div>
-              <button className="w-full bg-indigo-600 text-white font-bold py-3 mt-8 rounded-lg hover:bg-indigo-700 transition-transform transform hover:scale-105 shadow-lg">
+              <button className="w-full bg-[var(--verde-oscuro)] text-white font-bold py-3 mt-8 rounded-lg hover:bg-[var(--naranja)] transition-transform transform hover:scale-105 shadow-lg">
                 Finalizar Compra
               </button>
             </div>
