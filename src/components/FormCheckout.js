@@ -42,7 +42,7 @@ export const FormCheckout = ({ handleAddOrder }) => (
         initialValues={{
           email: "",
           nombre: "",
-          apellidos: "",
+          apellido: "",
           dni: "",
           telefono: "",
         }}
@@ -105,7 +105,7 @@ export const FormCheckout = ({ handleAddOrder }) => (
                 id="nombre"
                 name="nombre"
                 validate={validateRequired}
-                className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-[var(--naranja)]"
+                className="text-black  mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-[var(--naranja)]"
               />
               <div className="min-h-[1rem]">
                 {errors.nombre && touched.nombre && (
@@ -119,21 +119,21 @@ export const FormCheckout = ({ handleAddOrder }) => (
             {/* Apellidos */}
             <div>
               <label
-                htmlFor="apellidos"
+                htmlFor="apellido"
                 className="block text-sm font-medium text-gray-700"
               >
-                Apellidos*
+                Apellido*
               </label>
               <Field
-                id="apellidos"
-                name="apellidos"
+                id="apellido"
+                name="apellido"
                 validate={validateRequired}
-                className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-[var(--naranja)]"
+                className="text-black mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-[var(--naranja)]"
               />
               <div className="min-h-[1rem]">
-                {errors.apellidos && touched.apellidos && (
+                {errors.apellido && touched.apellido && (
                   <div className="text-red-500 text-xs mt-1">
-                    {errors.apellidos}
+                    {errors.apellido}
                   </div>
                 )}
               </div>
@@ -151,7 +151,7 @@ export const FormCheckout = ({ handleAddOrder }) => (
                 id="dni"
                 name="dni"
                 validate={validateRequired}
-                className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-[var(--naranja)]"
+                className="text-black  mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-[var(--naranja)]"
               />
               <div className="min-h-[1rem]">
                 {errors.dni && touched.dni && (
@@ -171,7 +171,7 @@ export const FormCheckout = ({ handleAddOrder }) => (
               <Field
                 id="telefono"
                 name="telefono"
-                className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus: focus:border-[var(--naranja)]"
+                className="text-black mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus: focus:border-[var(--naranja)]"
               />
               <div className="min-h-[1rem]"></div>
             </div>

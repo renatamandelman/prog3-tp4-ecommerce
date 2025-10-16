@@ -56,7 +56,7 @@ console.log('singleProduct:',singleProduct)
 
     const licenseProduct = {
       ...selectedLicense,
-      _id: `${singleProduct._id}_${selectedLicense._id}`, // ID único para evitar conflictos
+      _id: singleProduct._id, // ID único para evitar conflictos
       qty: 1,
       isLicense: true, // Propiedad opcional para identificarla
       name:`${singleProduct.name} `,

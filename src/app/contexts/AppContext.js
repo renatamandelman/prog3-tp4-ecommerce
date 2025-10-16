@@ -88,7 +88,7 @@ const cartTotal = cart.reduce(
       qty: product.qty
     }
 
-    return
+    return prod;
   })
    const orderValues = {
       user: userValues,
@@ -99,7 +99,7 @@ const cartTotal = cart.reduce(
     
     try {
       const response = await axios.post(`${API_URL}/orders`, orderValues);
-      console.log(response.data)
+      console.log('response',response.data)
     } catch (error) {
       console.log('error', error)
     }
