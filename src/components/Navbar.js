@@ -4,17 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({color, logo}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   
 
   return (
-    <div className="absolute w-full h-[70px] text-[#3B413C] px-4 flex flex-row items-center justify-between">
+    <div className={`absolute w-full h-[70px] text-[${color}] px-4 flex flex-row items-center justify-between`}>
       <Link href="/">
         {" "}
         <Image
-          src="/dummy/logoNegro.svg"
+          src={`/dummy/${logo}`}
           width={100}
           height={100}
           alt="perrito cool"
@@ -50,7 +50,7 @@ const Navbar = () => {
 
           {/* Dropdown */}
           {isOpen && (
-            <ul className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-xl py-2 w-40 z-50">
+            <ul className="absolute top-full left-0 mt-2 text-black bg-white shadow-lg rounded-xl py-2 w-40 z-50">
               <li className="px-4 py-2 hover:bg-gray-100">
                 <Link href="/services/branding" onClick={() => setIsOpen(false)}>
                   Branding
