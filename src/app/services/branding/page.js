@@ -32,6 +32,8 @@ const branding = {
     "Brand launch visuals",
     "Style guide PDF",
   ],
+  image1: "plantilla-manual.jpg", 
+  image2: "plantilla-pitchdeck.png",
 };
 
 const brandingPage = () => {

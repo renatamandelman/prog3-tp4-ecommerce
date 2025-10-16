@@ -60,6 +60,7 @@ const SingleProduct = ({ id }) => {
       _id: `${singleProduct._id}_${selectedLicense._id}`, // ID único para evitar conflictos
       qty: 1,
       isLicense: true, // Propiedad opcional para identificarla
+      name: `${singleProduct.name} — ${selectedLicense.name}`
     };
     handleAddToCart(licenseProduct);
 

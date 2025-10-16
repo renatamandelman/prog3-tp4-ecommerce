@@ -30,7 +30,9 @@ const webDesign = {
     "Hero sections & image placement",
     "SEO-ready HTML structure (optional)",
     "Developer handoff files"
-  ]
+  ],
+  image1: "plantilla-mediakit.jpg", 
+  image2: "plantilla-portfolio.png",
 };
 
 const uxuiPage = () => {

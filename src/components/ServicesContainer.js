@@ -25,11 +25,11 @@ const ServicesContainer = ({ pageStyle }) => {
 
         <div className="flex-shrink-0">
           <Image
-            src="/dummy/perrito.jpg"
+            src={`/assets/${pageStyle.image1}`}
             width={450}
             height={450}
             className="rounded-lg shadow-[6px_6px_0_rgba(255,115,0,0.7)] object-cover"
-            alt="perrito"
+            alt={pageStyle.image1}
           />
         </div>
       </section>
@@ -37,11 +37,11 @@ const ServicesContainer = ({ pageStyle }) => {
       <section className="flex flex-row items-center justify-between gap-10 h-[500px]">
         <div className="flex-shrink-0">
           <Image
-            src="/dummy/perrito.jpg"
+            src={`/assets/${pageStyle.image2}`}
             width={450}
             height={450}
             className="rounded-lg shadow-[6px_6px_0_rgba(174,174,174,0.7)]"
-            alt="perrito"
+            alt={pageStyle.image2}
           />
         </div>
         <div className="flex flex-col justify-start max-w-lg space-y-4">
