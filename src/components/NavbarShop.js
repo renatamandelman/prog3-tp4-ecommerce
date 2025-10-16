@@ -13,7 +13,9 @@ const NavbarShop = () => {
       />
       </Link>
 
-      <ul className="flex flex-row w-[30%] justify-between font-bold mr-4 pr-2">
+
+      <ul className="flex flex-row w-[40%] justify-between font-bold mr-4 pr-2">
+        <li><Link href='/ourProducts'>Todos los productos</Link></li>
         <li className="flex flex-row items-center"><Link href='/categories/plantilla'>Plantillas</Link> </li>
         <li><Link href='/categories/mockup'>Mockups</Link></li>
         <li><Link href=''>Contact Us</Link></li>
