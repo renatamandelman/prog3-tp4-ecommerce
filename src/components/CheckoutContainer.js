@@ -58,35 +58,39 @@ const CheckoutContainer = () => {
               <h2 className="text-2xl font-semibold text-gray-700 border-b pb-4 mb-6">
                 Tu Pedido
               </h2>
-              <div className="space-y-4">
-                {cart.map((product) => (
-                  <div
-                    key={product._id}
-                    className="flex justify-between items-center"
-                  >
-                    <div className="flex items-center gap-4">
-                      <Image
-                        src={`/assets/${product.imageUrl}`}                 
-                        alt={product.title}
-                        className="w-16 h-16 object-cover rounded-md"
-                        width={16}
-                        height={116}
-                      />
-                      <div>
-                        <h3 className="font-semibold text-gray-800">
-                          {product.name}
-                        </h3>
-                        <p className="text-sm text-gray-500">
-                          Cantidad: {product.qty}
-                        </p>
-                      </div>
-                    </div>
-                    <p className="font-medium text-gray-700">
-                      {formatCurrency(product.price * product.qty)}
-                    </p>
-                  </div>
-                ))}
-              </div>
+           <div className="space-y-4">
+  {cart.map((product) => (
+    <div
+      key={product._id}
+      className="flex justify-between items-center"
+    >
+      <div className="flex items-center gap-4">
+    
+          <Image
+            src={`/assets/${product.imageUrl}`}
+            alt={product.name}
+            width={64}
+            height={64}
+            className="w-16 h-16 object-cover rounded-md"
+          />
+  
+
+        <div>
+          <h3 className="font-semibold text-gray-800">
+            {product.name} {/* Mostrará el nombre del producto o de la licencia */}
+          </h3>
+          <p className="text-sm text-gray-500">
+            Cantidad: {product.qty}
+          </p>
+        </div>
+      </div>
+      <p className="font-medium text-gray-700">
+        {formatCurrency(product.price * product.qty)}
+      </p>
+    </div>
+  ))}
+</div>
+
               <div className="border-t my-6"></div>
               <div className="space-y-3 text-gray-600">
                 <div className="flex justify-between">
