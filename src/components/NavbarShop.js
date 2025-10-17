@@ -4,19 +4,22 @@ import Link from "next/link";
 
 const NavbarShop = () => {
   return (
-    <div className="absolute w-full h-[50px] text-[#3B413C] px-4 flex flex-row items-center justify-between ">
+    <div className=" w-full h-[70px] text-[#3B413C] px-4 flex flex-row items-center justify-between  bg-[#e6d8c7] ">
     <Link href="/">  <Image
-        src="/dummy/perrito.jpg"
-        width={40}
-        height={40}
+       src="/dummy/logoNegro.svg"
+        width={100}
+        height={100}
         alt="perrito cool"
       />
       </Link>
 
-      <ul className="flex flex-row w-[30%] justify-between font-bold mr-4 pr-2">
-        <li className="flex flex-row items-center"><Link href='/templates'>Templates</Link> </li>
-        <li><Link href='/mockups'>Mockups</Link></li>
+
+      <ul className="flex flex-row w-[40%] justify-between font-bold mr-4 pr-2">
+        <li><Link href='/ourProducts'>Todos los productos</Link></li>
+        <li className="flex flex-row items-center"><Link href='/categories/plantilla'>Plantillas</Link> </li>
+        <li><Link href='/categories/mockup'>Mockups</Link></li>
         <li><Link href=''>Contact Us</Link></li>
+        <li><Link href='/checkout'>Cart</Link></li>
       </ul>
     </div>
   );

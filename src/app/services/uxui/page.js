@@ -31,6 +31,8 @@ const uxui = {
     "Error/empty states",
     "Handoff-ready Figma file",
   ],
+  image1: "plantilla-portfolio.png", 
+  image2: "plantilla-instagram.png",
 };
 
 const uxuiPage = () => {

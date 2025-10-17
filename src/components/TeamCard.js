@@ -10,7 +10,7 @@ const TeamCard = ({ image, color, name, role }) => {
         <p className="font-medium">{role}</p>
       </div>
       <Image
-        className="rounded-b-2xl w-[250px]"
+        className="rounded-b-2xl w-[250px] h-[250px]"
         src={image}
         width={200}
         height={200}

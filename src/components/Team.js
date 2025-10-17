@@ -8,9 +8,9 @@ const Team = () => {
         <h1 className="text-4xl mb-2 family-serif text-[80px]">The Team</h1>
         <p className="text-lg">Conocé a las capas cracks ídolas de nuestras diseñadoras :P</p>
         <div className="h-[250px] w-[1000px] flex justify-around mt-10 ">
-          <TeamCard image="/dummy/perrito.jpg" color="bg-[#9DB5B2]" name="Renata Mandelman" role="Backend Developer" />
-          <TeamCard image="/dummy/perrito.jpg" color="bg-[#925E78]" name="Bárbara Carballo" role="UX/UI Designer"/>
-          <TeamCard image="/dummy/perrito.jpg" color="bg-[#F19A3E]" name="Micaela Svatzky" role="Frontend Developer"/>
+          <TeamCard image="/assets/rena.jpeg" color="bg-[#9DB5B2]" name="Renata Mandelman" role="Backend Developer" />
+          <TeamCard image="/assets/barby.jpeg" color="bg-[#925E78]" name="Bárbara Carballo" role="UX/UI Designer"/>
+          <TeamCard image="/assets/mica.jpeg" color="bg-[#F19A3E]" name="Micaela Svatzky" role="Frontend Developer"/>
         </div>
       </div>
     
