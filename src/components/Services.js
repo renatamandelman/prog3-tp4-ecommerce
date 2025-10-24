@@ -23,7 +23,7 @@ const Services = () => {
             width={1800}
             height={100}
             alt="purple tab"
-            className="absolute top-[30px] md:top-[100px] lg:top-[120px] w-[800px] md:w-[1600px] lg:w-[2000px]"
+            className="absolute top-[30px] md:top-[100px] lg:top-[100px] w-[800px] md:w-[1600px] lg:w-[2000px]"
           />
         </div>
         <div>
@@ -41,7 +41,7 @@ const Services = () => {
             width={1600}
             height={100}
             alt="yellow tab"
-            className="absolute top-[95px] md:top-[220px] lg:top-[280px] w-[700px] md:w-[1500px] lg:w-[1800px]"
+            className="absolute top-[95px] md:top-[220px] lg:top-[320px] w-[700px] md:w-[1500px] lg:w-[1800px]"
           />
         </div>
       </div>
