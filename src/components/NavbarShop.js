@@ -8,7 +8,7 @@ const NavbarShop = () => {
 
   return (
     <nav className="w-full h-[70px] text-[#3B413C] px-4 flex items-center justify-between bg-[#e6d8c7] relative z-50">
-      {/* Logo */}
+
       <Link href="/" className="flex items-center">
         <Image
           src="/dummy/logoNegro.svg"
@@ -18,7 +18,7 @@ const NavbarShop = () => {
         />
       </Link>
 
-      {/* menu hamburguesa */}
+
       <button
         className="md:hidden flex flex-col justify-between w-6 h-5 focus:outline-none"
         onClick={() => setMenuOpen(!menuOpen)}
@@ -40,7 +40,7 @@ const NavbarShop = () => {
         ></span>
       </button>
 
-      {/* Menú principal */}
+
       <ul
         className={`
           md:flex md:flex-row md:w-[50%] md:justify-between md:font-bold md:mr-4 md:pr-2
