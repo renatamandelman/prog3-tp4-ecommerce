@@ -107,9 +107,6 @@ const Navbar = ({ color, logo }) => {
         <li className="px-4 py-2 md:p-0">
           <Link href="">About Us</Link>
         </li>
-        <li className="px-4 py-2 md:p-0">
-          <Link href="">Contact Us</Link>
-        </li>
       </ul>
     </nav>
   );
