@@ -24,14 +24,14 @@ const maskStyle = {
 
 const WorkCard = ({ title, image, color }) => {
   return (
-    <div className="relative w-[510px] h-[277px]">
+    <div className="relative w-[300px] h-[170px] md:w-[400px] md:h-[220px] lg:w-[510px] lg:h-[277px] transition-all">
       {/* Sombra */}
       <div
         className="absolute inset-0 z-0"
         style={{
           ...maskStyle,
           backgroundColor: color,
-          transform: "translate(10px, 10px)",
+          transform: "translate(6px, 6px)",
         }}
       />
 
@@ -43,8 +43,10 @@ const WorkCard = ({ title, image, color }) => {
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/70 pointer-events-none" />
-        <div className="absolute bottom-4 left-4 text-white">
-          <h3 className="text-lg font-semibold">{title}</h3>
+        <div className="absolute bottom-3 left-3 md:bottom-4 md:left-4 text-white">
+          <h3 className="text-base md:text-lg lg:text-xl font-semibold">
+            {title}
+          </h3>
         </div>
       </div>
     </div>
