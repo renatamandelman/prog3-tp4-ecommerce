@@ -11,7 +11,7 @@ const Navbar = ({ color, logo }) => {
     <nav
       className={`absolute w-full h-[70px] text-[${color}] px-4 flex items-center justify-between z-50`}
     >
-      {/* LOGO */}
+
       <Link href="/" className="flex items-center">
         <Image
           src={`/dummy/${logo}`}
@@ -21,7 +21,7 @@ const Navbar = ({ color, logo }) => {
         />
       </Link>
 
-      {/* MENU HAMBURGUESA */}
+
       <button
         className="md:hidden flex flex-col justify-between w-6 h-5 focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
@@ -43,7 +43,7 @@ const Navbar = ({ color, logo }) => {
         ></span>
       </button>
 
-      {/* MENÚ PRINCIPAL */}
+  
       <ul
         className={`
           md:flex md:flex-row md:w-[40%] md:justify-between md:font-bold md:mr-4 md:pr-2
@@ -52,7 +52,7 @@ const Navbar = ({ color, logo }) => {
           ${isOpen ? "opacity-100 visible" : "opacity-0 invisible md:visible md:opacity-100"}
         `}
       >
-        {/* Dropdown */}
+
         <li className="relative flex flex-col md:flex-row items-start md:items-center w-full md:w-auto cursor-pointer">
           <button
             onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -79,7 +79,7 @@ const Navbar = ({ color, logo }) => {
             </svg>
           </button>
 
-          {/* Dropdown Items */}
+
           {dropdownOpen && (
             <ul className="md:absolute top-full left-0 md:mt-2 bg-white text-black shadow-lg md:rounded-xl md:py-2 w-full md:w-40 z-50">
               <li className="px-4 py-2 hover:bg-gray-100">
